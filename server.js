@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(isAuth)
 dotenv.config()
 
-const mongoURL = process.env.MONGO_URL
+const mongoURL = "mongodb+srv://project15:12345@cluster0.u2khs7y.mongodb.net/";
 mongoose.connect(mongoURL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
